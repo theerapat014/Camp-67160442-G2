@@ -4,7 +4,7 @@
     <ul>
         <?php for( $i = 1; $i <= 12; $i++ ){?>
             <li>{{ $mynum }}*{{ $i }} = {{ $mynum * $i }}</li>
-        <?php }?>
+        <?php }
         ?>
     </ul>
 @endsection
