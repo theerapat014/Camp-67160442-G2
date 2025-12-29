@@ -19,5 +19,12 @@ Route::namespace('App\Http\Controllers')->group(function () {
     Route::post('/Flight', 'FlightController@store');
 
 });
+Route::namespace('App\Http\Controllers')->group(function(){
+    Route::get('/pokedexs', 'PokedexsController@index');
+    Route::get('/pokedexs/{id}/edit', 'PokedexsController@edit');
+    Route::post('/pokedex', 'PokedexsController@store');
+    Route::put('/pokedex/{id}', 'PokedexsController@update');  // ← ตรงนี้สำคัญ
+    Route::delete('/pokedexs/{id}', 'PokedexsController@destroy');
+});
 
 
